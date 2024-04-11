@@ -95,6 +95,7 @@
     <Compile Include="Assets\Imports\GleyPlugins\TrafficSystem\Scripts\Core\EditorOnlyMonoBehaviours\Intersection\PriorityIntersectionSettings.cs" />
     <Compile Include="Assets\Scripts\WanderScript.cs" />
     <Compile Include="Assets\Imports\GleyPlugins\TrafficSystem\Scripts\Core\Traffic\Jobs\UpdateTriggerJob.cs" />
+    <Compile Include="Assets\CarAI\Scripts\PlayButtonClick.cs" />
     <Compile Include="Assets\Imports\GleyPlugins\SharedUrbanAssets\Scripts\Runtime\EditorOnlyMonoBehaviours\ConnectionCurve.cs" />
     <Compile Include="Assets\Imports\GleyPlugins\TrafficSystem\Scripts\Core\Traffic\Enums\BlinkReasons.cs" />
     <Compile Include="Assets\Imports\GleyPlugins\TrafficSystem\Scripts\Core\Traffic\Managers\TrafficManager.cs" />
@@ -107,6 +108,7 @@
     <Compile Include="Assets\Imports\GleyPlugins\TrafficSystem\Scripts\Core\Traffic\Intersection\GenericIntersection.cs" />
     <Compile Include="Assets\Imports\GleyPlugins\TrafficSystem\Scripts\Core\EditorOnlyMonoBehaviours\Intersection\IntersectionStopWaypointsSettings.cs" />
     <Compile Include="Assets\Imports\GleyPlugins\TrafficSystem\Example\UI\CameraFollow.cs" />
+    <Compile Include="Assets\CarAI\Scripts\QuitButtonClick.cs" />
     <Compile Include="Assets\Imports\GleyPlugins\TrafficSystem\Scripts\Core\EditorOnlyMonoBehaviours\Routes\WaypointExtensionMethods.cs" />
     <Compile Include="Assets\CarAI\Scripts\CarAI.cs" />
     <Compile Include="Assets\Scripts\GameManager.cs" />
@@ -165,8 +167,29 @@
     <Compile Include="Assets\Imports\GleyPlugins\TrafficSystem\Scripts\Core\Traffic\Jobs\DriveJob.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
+    <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />
+    <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap.shader" />
+    <None Include="Assets\TextMesh Pro\Shaders\TMPro_Mobile.cginc" />
+    <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF SSD.shader" />
+    <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Surface-Mobile.shader" />
+    <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Surface.shader" />
+    <None Include="Assets\TextMesh Pro\Sprites\EmojiOne Attribution.txt" />
+    <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap-Custom-Atlas.shader" />
+    <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF.shader" />
+    <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile SSD.shader" />
+    <None Include="Assets\TextMesh Pro\Resources\LineBreaking Leading Characters.txt" />
+    <None Include="Assets\TextMesh Pro\Shaders\TMPro_Properties.cginc" />
     <None Include="Assets\CarAI\Readme.txt.txt" />
+    <None Include="Assets\TextMesh Pro\Shaders\TMPro_Surface.cginc" />
+    <None Include="Assets\TextMesh Pro\Resources\LineBreaking Following Characters.txt" />
+    <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Masking.shader" />
+    <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF Overlay.shader" />
+    <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap-Mobile.shader" />
+    <None Include="Assets\TextMesh Pro\Fonts\LiberationSans - OFL.txt" />
+    <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile.shader" />
     <None Include="Assets\Imports\GleyPlugins\TrafficSystem\Scripts\Version.txt" />
+    <None Include="Assets\TextMesh Pro\Shaders\TMP_Sprite.shader" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">

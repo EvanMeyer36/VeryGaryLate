@@ -361,6 +361,8 @@
 -analyzer:"C:/Program Files/Unity/Hub/Editor/2022.3.17f1/Editor/Data/Tools/Unity.SourceGenerators/Unity.SourceGenerators.dll"
 "Assets/CarAI/Scripts/CarAI.cs"
 "Assets/CarAI/Scripts/controllingCarAI.cs"
+"Assets/CarAI/Scripts/PlayButtonClick.cs"
+"Assets/CarAI/Scripts/QuitButtonClick.cs"
 "Assets/CarAI/Scripts/SensorManager.cs"
 "Assets/EasyMainMenu/Scripts/Main Menu Scripts/MainMenuController.cs"
 "Assets/Imports/GleyPlugins/SharedUrbanAssets/Scripts/Runtime/Base/WaypointManagerBase.cs"
