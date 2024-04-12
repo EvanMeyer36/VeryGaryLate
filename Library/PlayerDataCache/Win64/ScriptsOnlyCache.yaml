@@ -16,6 +16,8 @@ ScriptsOnlyBuild:
     - PlayerController
     - QuitButtonClick
     - ScenePopulator
+    Unity.AI.Navigation.Editor.dll:
+    - Unity.AI.Navigation.Editor.NavMeshAssetManager
     Unity.AI.Navigation.dll:
     - Unity.AI.Navigation.NavMeshSurface
     Unity.InputSystem.dll:
@@ -127,6 +129,15 @@ ScriptsOnlyBuild:
     fullTypeName: PlayButtonClick
     methodName: OnClick
   - assembly: Assembly-CSharp
+    fullTypeName: GameManager1
+    methodName: QuitGame
+  - assembly: Assembly-CSharp
+    fullTypeName: GameManager1
+    methodName: Menu
+  - assembly: Assembly-CSharp
+    fullTypeName: GameManager1
+    methodName: ResumeGame
+  - assembly: Assembly-CSharp
     fullTypeName: PlayerController
     methodName: OnMove
   - assembly: Assembly-CSharp
@@ -205,31 +216,39 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 1562}
+      Script: {instanceID: 1538}
     - Class: 114
-      Script: {instanceID: 1620}
+      Script: {instanceID: 1612}
     - Class: 114
-      Script: {instanceID: 2826}
+      Script: {instanceID: 1616}
     - Class: 114
-      Script: {instanceID: 3016}
+      Script: {instanceID: 2776}
     - Class: 114
-      Script: {instanceID: 3442}
+      Script: {instanceID: 2996}
     - Class: 114
-      Script: {instanceID: 4078}
+      Script: {instanceID: 3326}
     - Class: 114
-      Script: {instanceID: 5876}
+      Script: {instanceID: 4038}
     - Class: 114
-      Script: {instanceID: 5986}
+      Script: {instanceID: 5800}
+    - Class: 114
+      Script: {instanceID: 5904}
     - Class: 114
       Script: {instanceID: 6236}
     - Class: 114
-      Script: {instanceID: 6384}
+      Script: {instanceID: 6782}
     - Class: 114
-      Script: {instanceID: 8098}
+      Script: {instanceID: 9502}
     - Class: 114
-      Script: {instanceID: 8798}
+      Script: {instanceID: 9562}
     - Class: 114
-      Script: {instanceID: 9010}
+      Script: {instanceID: 9638}
+    - Class: 114
+      Script: {instanceID: 9674}
+    - Class: 114
+      Script: {instanceID: 9698}
+    - Class: 114
+      Script: {instanceID: 9734}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -241,6 +260,8 @@ ScriptsOnlyBuild:
     - Class: 195
       Script: {instanceID: 0}
     - Class: 196
+      Script: {instanceID: 0}
+    - Class: 213
       Script: {instanceID: 0}
     - Class: 215
       Script: {instanceID: 0}
@@ -290,29 +311,29 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 1562}
+      Script: {instanceID: 1538}
     - Class: 114
-      Script: {instanceID: 1620}
+      Script: {instanceID: 1616}
     - Class: 114
-      Script: {instanceID: 2826}
+      Script: {instanceID: 2996}
     - Class: 114
-      Script: {instanceID: 3016}
+      Script: {instanceID: 4038}
     - Class: 114
-      Script: {instanceID: 3442}
+      Script: {instanceID: 5800}
     - Class: 114
-      Script: {instanceID: 4078}
+      Script: {instanceID: 5904}
     - Class: 114
-      Script: {instanceID: 5876}
+      Script: {instanceID: 6236}
     - Class: 114
-      Script: {instanceID: 5986}
+      Script: {instanceID: 9502}
     - Class: 114
-      Script: {instanceID: 6384}
+      Script: {instanceID: 9562}
     - Class: 114
-      Script: {instanceID: 8098}
+      Script: {instanceID: 9638}
     - Class: 114
-      Script: {instanceID: 8798}
+      Script: {instanceID: 9674}
     - Class: 114
-      Script: {instanceID: 9010}
+      Script: {instanceID: 9698}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -377,33 +398,33 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 1562}
+      Script: {instanceID: 1538}
     - Class: 114
-      Script: {instanceID: 1620}
+      Script: {instanceID: 1616}
     - Class: 114
-      Script: {instanceID: 2826}
+      Script: {instanceID: 2996}
     - Class: 114
-      Script: {instanceID: 3016}
+      Script: {instanceID: 4038}
     - Class: 114
-      Script: {instanceID: 3442}
+      Script: {instanceID: 5800}
     - Class: 114
-      Script: {instanceID: 3672}
+      Script: {instanceID: 5904}
     - Class: 114
-      Script: {instanceID: 4078}
+      Script: {instanceID: 6236}
     - Class: 114
-      Script: {instanceID: 5876}
+      Script: {instanceID: 9502}
     - Class: 114
-      Script: {instanceID: 5986}
+      Script: {instanceID: 9530}
     - Class: 114
-      Script: {instanceID: 6384}
+      Script: {instanceID: 9562}
     - Class: 114
-      Script: {instanceID: 7824}
+      Script: {instanceID: 9638}
     - Class: 114
-      Script: {instanceID: 8098}
+      Script: {instanceID: 9674}
     - Class: 114
-      Script: {instanceID: 8798}
+      Script: {instanceID: 9698}
     - Class: 114
-      Script: {instanceID: 9010}
+      Script: {instanceID: 9760}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -450,23 +471,23 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 1562}
+      Script: {instanceID: 1612}
     - Class: 114
-      Script: {instanceID: 1616}
+      Script: {instanceID: 2776}
     - Class: 114
-      Script: {instanceID: 2174}
+      Script: {instanceID: 2996}
     - Class: 114
-      Script: {instanceID: 2788}
+      Script: {instanceID: 3326}
     - Class: 114
-      Script: {instanceID: 3016}
+      Script: {instanceID: 5904}
     - Class: 114
-      Script: {instanceID: 3354}
+      Script: {instanceID: 6236}
     - Class: 114
-      Script: {instanceID: 5986}
+      Script: {instanceID: 6782}
     - Class: 114
-      Script: {instanceID: 6880}
+      Script: {instanceID: 9498}
     - Class: 114
-      Script: {instanceID: 8098}
+      Script: {instanceID: 9502}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -505,23 +526,23 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 1562}
+      Script: {instanceID: 1612}
     - Class: 114
-      Script: {instanceID: 1616}
+      Script: {instanceID: 2776}
     - Class: 114
-      Script: {instanceID: 2174}
+      Script: {instanceID: 2996}
     - Class: 114
-      Script: {instanceID: 2788}
+      Script: {instanceID: 3326}
     - Class: 114
-      Script: {instanceID: 3016}
+      Script: {instanceID: 5904}
     - Class: 114
-      Script: {instanceID: 3354}
+      Script: {instanceID: 6236}
     - Class: 114
-      Script: {instanceID: 5986}
+      Script: {instanceID: 6782}
     - Class: 114
-      Script: {instanceID: 6880}
+      Script: {instanceID: 9498}
     - Class: 114
-      Script: {instanceID: 8098}
+      Script: {instanceID: 9502}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -560,23 +581,23 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 1562}
+      Script: {instanceID: 1612}
     - Class: 114
-      Script: {instanceID: 1616}
+      Script: {instanceID: 2776}
     - Class: 114
-      Script: {instanceID: 2788}
+      Script: {instanceID: 2996}
     - Class: 114
-      Script: {instanceID: 3016}
+      Script: {instanceID: 3326}
     - Class: 114
-      Script: {instanceID: 3354}
+      Script: {instanceID: 5904}
     - Class: 114
-      Script: {instanceID: 5986}
+      Script: {instanceID: 6236}
     - Class: 114
-      Script: {instanceID: 6880}
+      Script: {instanceID: 6782}
     - Class: 114
-      Script: {instanceID: 8098}
+      Script: {instanceID: 9502}
     - Class: 114
-      Script: {instanceID: 52722}
+      Script: {instanceID: 269884}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -629,47 +650,47 @@ ScriptsOnlyBuild:
     - Class: 111
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 1562}
+      Script: {instanceID: 1612}
     - Class: 114
-      Script: {instanceID: 1616}
+      Script: {instanceID: 2284}
     - Class: 114
-      Script: {instanceID: 2292}
+      Script: {instanceID: 2428}
     - Class: 114
-      Script: {instanceID: 2436}
+      Script: {instanceID: 2776}
     - Class: 114
-      Script: {instanceID: 2788}
+      Script: {instanceID: 2996}
     - Class: 114
-      Script: {instanceID: 3016}
+      Script: {instanceID: 3326}
     - Class: 114
-      Script: {instanceID: 3354}
+      Script: {instanceID: 4212}
     - Class: 114
-      Script: {instanceID: 4260}
+      Script: {instanceID: 4498}
     - Class: 114
-      Script: {instanceID: 4554}
+      Script: {instanceID: 4790}
     - Class: 114
-      Script: {instanceID: 4852}
+      Script: {instanceID: 5224}
     - Class: 114
-      Script: {instanceID: 5292}
+      Script: {instanceID: 5512}
     - Class: 114
-      Script: {instanceID: 5412}
+      Script: {instanceID: 5596}
     - Class: 114
-      Script: {instanceID: 5582}
+      Script: {instanceID: 5904}
     - Class: 114
-      Script: {instanceID: 5668}
+      Script: {instanceID: 6236}
     - Class: 114
-      Script: {instanceID: 5986}
+      Script: {instanceID: 6412}
     - Class: 114
-      Script: {instanceID: 6504}
+      Script: {instanceID: 6782}
     - Class: 114
-      Script: {instanceID: 6880}
+      Script: {instanceID: 7618}
     - Class: 114
-      Script: {instanceID: 7732}
+      Script: {instanceID: 8016}
     - Class: 114
-      Script: {instanceID: 8138}
+      Script: {instanceID: 9490}
     - Class: 114
-      Script: {instanceID: 25898}
+      Script: {instanceID: 9554}
     - Class: 114
-      Script: {instanceID: 25912}
+      Script: {instanceID: 9670}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 124
@@ -714,7 +735,7 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 8982}
+      Script: {instanceID: 9666}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 157
@@ -747,7 +768,7 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 8982}
+      Script: {instanceID: 9666}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 157
@@ -780,7 +801,7 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 8982}
+      Script: {instanceID: 9666}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 157
@@ -813,7 +834,7 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 8982}
+      Script: {instanceID: 9666}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 157
@@ -827,16 +848,10 @@ ScriptsOnlyBuild:
   scriptHashData:
   - hash:
       serializedVersion: 2
-      Hash: 540882762544409cc4530e60db00e951
-    assemblyName: UnityEngine.UI
-    namespaceName: UnityEngine.UI
-    className: CanvasScaler
-  - hash:
-      serializedVersion: 2
-      Hash: 5384782efb14b125020fed70d681fb18
+      Hash: 2ed4d8956a5a701e2f95cbcff648cbf8
     assemblyName: Assembly-CSharp
     namespaceName: 
-    className: TrafficManager
+    className: CrowdMember
   - hash:
       serializedVersion: 2
       Hash: 55060a7bf226ac385ce19ebd450f199f
@@ -923,12 +938,6 @@ ScriptsOnlyBuild:
     className: TrafficComponent
   - hash:
       serializedVersion: 2
-      Hash: 06e665a55821ed98392d7c61eb402cb1
-    assemblyName: Assembly-CSharp
-    namespaceName: 
-    className: EndLevelController
-  - hash:
-      serializedVersion: 2
       Hash: b12640dfdb5966813e9dd838893e6c4a
     assemblyName: Unity.VisualScripting.Core
     namespaceName: Unity.VisualScripting
@@ -983,12 +992,6 @@ ScriptsOnlyBuild:
     className: RawImage
   - hash:
       serializedVersion: 2
-      Hash: 48e1cc58021c9e229ea1a9a5ea64cfbf
-    assemblyName: Assembly-CSharp
-    namespaceName: 
-    className: GameManager
-  - hash:
-      serializedVersion: 2
       Hash: 1321993db8249e1e05e1e0492b2bbdc3
     assemblyName: Unity.VisualScripting.Core
     namespaceName: Unity.VisualScripting
@@ -1019,12 +1022,6 @@ ScriptsOnlyBuild:
     className: TimelineAsset
   - hash:
       serializedVersion: 2
-      Hash: 2ed4d8956a5a701e2f95cbcff648cbf8
-    assemblyName: Assembly-CSharp
-    namespaceName: 
-    className: CrowdMember
-  - hash:
-      serializedVersion: 2
       Hash: ada873da50974d1e7ce247ffb296b0f3
     assemblyName: Unity.VisualScripting.Core
     namespaceName: Unity.VisualScripting
@@ -1035,18 +1032,6 @@ ScriptsOnlyBuild:
     assemblyName: Unity.VisualScripting.Core
     namespaceName: Unity.VisualScripting
     className: UnityMessageListener
-  - hash:
-      serializedVersion: 2
-      Hash: 30e8f6ef1a9b4f901795d0eb701f07d7
-    assemblyName: Assembly-CSharp
-    namespaceName: 
-    className: AIScript
-  - hash:
-      serializedVersion: 2
-      Hash: 2e3dbf19f8394f57b6c0d638fddda074
-    assemblyName: Assembly-CSharp
-    namespaceName: GleyTrafficSystem
-    className: LayerSetup
   - hash:
       serializedVersion: 2
       Hash: fce9b835d1e8b08e7ecea8da19f21986
@@ -1115,12 +1100,6 @@ ScriptsOnlyBuild:
     className: OnScreenButton
   - hash:
       serializedVersion: 2
-      Hash: e13a4fd6d131eccddcdf3602281e3997
-    assemblyName: Assembly-CSharp
-    namespaceName: GleyTrafficSystem
-    className: UIButton
-  - hash:
-      serializedVersion: 2
       Hash: ee060d2f8f964477429d1a8a85bc6a27
     assemblyName: Assembly-CSharp
     namespaceName: GleyTrafficSystem
@@ -1149,12 +1128,6 @@ ScriptsOnlyBuild:
     assemblyName: Unity.VisualScripting.Core
     namespaceName: Unity.VisualScripting
     className: UnityOnMouseDownMessageListener
-  - hash:
-      serializedVersion: 2
-      Hash: 829f1fc5c144cb2d4d316f83920150b1
-    assemblyName: Assembly-CSharp
-    namespaceName: 
-    className: ArrowPointing
   - hash:
       serializedVersion: 2
       Hash: b6307dfc54cca9ba44f47185c578b0ce
@@ -1205,12 +1178,6 @@ ScriptsOnlyBuild:
     className: ScriptMachine
   - hash:
       serializedVersion: 2
-      Hash: 67945f7090acc48e589f8f660922e0af
-    assemblyName: Assembly-CSharp
-    namespaceName: 
-    className: CarController
-  - hash:
-      serializedVersion: 2
       Hash: 43ebd945b04bced376c791411cf5a289
     assemblyName: Unity.VisualScripting.Core
     namespaceName: Unity.VisualScripting
@@ -1221,12 +1188,6 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.TestRunner
     namespaceName: UnityEngine.TestTools.TestRunner.Callbacks
     className: PlayerQuitHandler
-  - hash:
-      serializedVersion: 2
-      Hash: 70f5e71c60034a539b438edbee8270bc
-    assemblyName: Assembly-CSharp
-    namespaceName: GleyTrafficSystem
-    className: VehiclePool
   - hash:
       serializedVersion: 2
       Hash: cf32d98954e63b8e30e9334b152e9b8e
@@ -1301,12 +1262,6 @@ ScriptsOnlyBuild:
     className: UnityOnPointerExitMessageListener
   - hash:
       serializedVersion: 2
-      Hash: 6be545ff71ac0c54eeb5ce9dc24b5fbb
-    assemblyName: Assembly-CSharp
-    namespaceName: GleyTrafficSystem
-    className: DebugSettings
-  - hash:
-      serializedVersion: 2
       Hash: 95426d463074947dcbffc797c44e779c
     assemblyName: Unity.InputSystem
     namespaceName: UnityEngine.InputSystem.UI.Editor
@@ -1329,12 +1284,6 @@ ScriptsOnlyBuild:
     assemblyName: Unity.InputSystem
     namespaceName: UnityEngine.InputSystem.Editor
     className: InputDebuggerWindow
-  - hash:
-      serializedVersion: 2
-      Hash: 05e5b6cca905444876ec1ae5f0fa2d75
-    assemblyName: Assembly-CSharp
-    namespaceName: 
-    className: SensorManager
   - hash:
       serializedVersion: 2
       Hash: 32bfadf4ab14c1e4298d945ac7dbee8f
@@ -1377,12 +1326,6 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.UI
     namespaceName: UnityEngine.EventSystems
     className: PhysicsRaycaster
-  - hash:
-      serializedVersion: 2
-      Hash: 2a0a604a3cbb4414c9c0826af3c2b3f8
-    assemblyName: Assembly-CSharp
-    namespaceName: GleyUrbanAssets
-    className: CurrentSceneData
   - hash:
       serializedVersion: 2
       Hash: 042785b832afb73fd0585521aa7baf43
@@ -1553,12 +1496,6 @@ ScriptsOnlyBuild:
     className: UnityOnBeginDragMessageListener
   - hash:
       serializedVersion: 2
-      Hash: a7c801e18882c40a25b542f35652ed53
-    assemblyName: Assembly-CSharp
-    namespaceName: 
-    className: MainMenuController
-  - hash:
-      serializedVersion: 2
       Hash: 51b80d3734ea86b38e3101db98029e15
     assemblyName: Unity.Timeline
     namespaceName: UnityEngine.Timeline
@@ -1655,12 +1592,6 @@ ScriptsOnlyBuild:
     className: NavMeshSurface
   - hash:
       serializedVersion: 2
-      Hash: 3d7c58b60f81c0df87dc40d3a4794343
-    assemblyName: Assembly-CSharp
-    namespaceName: 
-    className: controllingCarAI
-  - hash:
-      serializedVersion: 2
       Hash: 9dd54ce33440072d6692a67e0c384ad1
     assemblyName: Unity.Timeline
     namespaceName: UnityEngine.Timeline
@@ -1671,12 +1602,6 @@ ScriptsOnlyBuild:
     assemblyName: Unity.VisualScripting.Core
     namespaceName: Unity.VisualScripting
     className: UnityOnDeselectMessageListener
-  - hash:
-      serializedVersion: 2
-      Hash: 8cc5a829c55e9899aafe364fb63d5125
-    assemblyName: Assembly-CSharp
-    namespaceName: GleyTrafficSystem
-    className: VehicleLightsComponent
   - hash:
       serializedVersion: 2
       Hash: b5007673bbbdb9d12597a1d8201370f5
@@ -1703,22 +1628,16 @@ ScriptsOnlyBuild:
     className: PlayerInputManagerEditor
   - hash:
       serializedVersion: 2
-      Hash: 376eed96cf4be2353639a05c7db0a870
-    assemblyName: Assembly-CSharp
-    namespaceName: 
-    className: Door
+      Hash: 540882762544409cc4530e60db00e951
+    assemblyName: UnityEngine.UI
+    namespaceName: UnityEngine.UI
+    className: CanvasScaler
   - hash:
       serializedVersion: 2
       Hash: 6695372138427dc3132c35cd87dfeb2d
     assemblyName: Assembly-CSharp
     namespaceName: GleyUrbanAssets
     className: WaypointSettingsBase
-  - hash:
-      serializedVersion: 2
-      Hash: 893072f4ec76762ace7783080576d846
-    assemblyName: Assembly-CSharp
-    namespaceName: 
-    className: GroundCheck
   - hash:
       serializedVersion: 2
       Hash: ef38c1407dba8c1f5d69f5db61a694fe
@@ -1733,22 +1652,10 @@ ScriptsOnlyBuild:
     className: AspectRatioFitter
   - hash:
       serializedVersion: 2
-      Hash: 393e2e3345f66d39d86621737d807469
-    assemblyName: Assembly-CSharp
-    namespaceName: GleyTrafficSystem
-    className: UIInput
-  - hash:
-      serializedVersion: 2
       Hash: 9637dcdf3068a91dfe653e61bb82f13d
     assemblyName: Unity.TextMeshPro
     namespaceName: TMPro
     className: TextMeshProUGUI
-  - hash:
-      serializedVersion: 2
-      Hash: a37a01f31000e52978e89c3e491f84ec
-    assemblyName: Assembly-CSharp
-    namespaceName: 
-    className: PlayerOpenDoor
   - hash:
       serializedVersion: 2
       Hash: da5a949a0bbd2ff91bc51c5805c2c41f
@@ -1821,12 +1728,6 @@ ScriptsOnlyBuild:
     assemblyName: Unity.TextMeshPro
     namespaceName: TMPro
     className: TextContainer
-  - hash:
-      serializedVersion: 2
-      Hash: c7d6c607f77522139578346a3665cc5a
-    assemblyName: Assembly-CSharp
-    namespaceName: GleyTrafficSystem
-    className: IntersectionEvents
   - hash:
       serializedVersion: 2
       Hash: 3074afe1b03a0fb081e176a4ef1b9d09
@@ -1913,12 +1814,6 @@ ScriptsOnlyBuild:
     className: Physics2DRaycaster
   - hash:
       serializedVersion: 2
-      Hash: fb714df4c8a712cb0b3d6b9f57ebcf1a
-    assemblyName: Assembly-CSharp
-    namespaceName: GleyTrafficSystem
-    className: TrafficComponentMultiplayer
-  - hash:
-      serializedVersion: 2
       Hash: 19824dd35debb3fff0983df49f8359ab
     assemblyName: UnityEngine.TestRunner
     namespaceName: UnityEngine.TestTools.TestRunner.Callbacks
@@ -1941,12 +1836,6 @@ ScriptsOnlyBuild:
     assemblyName: Unity.VisualScripting.Core
     namespaceName: Unity.VisualScripting
     className: UnityOnPointerDownMessageListener
-  - hash:
-      serializedVersion: 2
-      Hash: b8dfa9b27e67a41e12cb0cbc3a758efb
-    assemblyName: Assembly-CSharp
-    namespaceName: GleyTrafficSystem
-    className: EngineSoundComponent
   - hash:
       serializedVersion: 2
       Hash: ee34255e3e86289bde9bad5e07b84cbc
@@ -1985,40 +1874,16 @@ ScriptsOnlyBuild:
     className: Dropdown
   - hash:
       serializedVersion: 2
-      Hash: 706c05b95a98f0819a1f5496b2525938
-    assemblyName: Assembly-CSharp
-    namespaceName: 
-    className: ScenePopulator
-  - hash:
-      serializedVersion: 2
-      Hash: bc1052c74afd0e25fba3a6738b9960b0
-    assemblyName: Assembly-CSharp
-    namespaceName: 
-    className: WanderScript
-  - hash:
-      serializedVersion: 2
       Hash: 4728e3d21cc2a12e391e71ec9b7eed0b
     assemblyName: Unity.Timeline
     namespaceName: UnityEngine.Timeline
     className: SignalTrack
   - hash:
       serializedVersion: 2
-      Hash: deb74dfbc133eec8b3485d96d57429e8
-    assemblyName: Assembly-CSharp
-    namespaceName: GleyTrafficSystem
-    className: VehicleComponent
-  - hash:
-      serializedVersion: 2
       Hash: 67272c9c30c50b68ef1ce72ac0191c57
     assemblyName: Unity.VisualScripting.Core
     namespaceName: Unity.VisualScripting
     className: UnityOnMoveMessageListener
-  - hash:
-      serializedVersion: 2
-      Hash: 234760af3de1b66a67af9e348bf7dc3a
-    assemblyName: Assembly-CSharp
-    namespaceName: 
-    className: GameManager1
   - hash:
       serializedVersion: 2
       Hash: d0392b7f3f52d5af537ade186b4f51f1
@@ -2093,12 +1958,6 @@ ScriptsOnlyBuild:
     className: WaypointSettings
   - hash:
       serializedVersion: 2
-      Hash: f19356352a76c1d176d896ee19afad67
-    assemblyName: Assembly-CSharp
-    namespaceName: 
-    className: PlayerController
-  - hash:
-      serializedVersion: 2
       Hash: ff76cf6cf52b4db7b95af6ffadca9288
     assemblyName: Unity.Timeline
     namespaceName: UnityEngine.Timeline
@@ -2117,12 +1976,6 @@ ScriptsOnlyBuild:
     className: UnityOnToggleValueChangedMessageListener
   - hash:
       serializedVersion: 2
-      Hash: 66c05ca465c6c8eff1db32bc935b98f9
-    assemblyName: Assembly-CSharp
-    namespaceName: 
-    className: CarAI
-  - hash:
-      serializedVersion: 2
       Hash: 8bf800a764665b085fe469e8aea7f167
     assemblyName: Unity.VisualScripting.Core
     namespaceName: Unity.VisualScripting
@@ -2135,22 +1988,10 @@ ScriptsOnlyBuild:
     className: TouchInputModule
   - hash:
       serializedVersion: 2
-      Hash: b081ad67d42056d121f2a03fd7d7dd4a
-    assemblyName: Assembly-CSharp
-    namespaceName: 
-    className: IntroController
-  - hash:
-      serializedVersion: 2
       Hash: 00eef92bf387da2c9009267123d9d674
     assemblyName: Unity.VisualScripting.Core
     namespaceName: Unity.VisualScripting
     className: UnityOnTriggerExit2DMessageListener
-  - hash:
-      serializedVersion: 2
-      Hash: 437227e8e0fcad22646909fb60433d19
-    assemblyName: Assembly-CSharp
-    namespaceName: 
-    className: LevelEnd
   - hash:
       serializedVersion: 2
       Hash: 8b15e35eb98fc258ec2e839df7c3c9b0
@@ -2159,16 +2000,196 @@ ScriptsOnlyBuild:
     className: UnityOnSliderValueChangedMessageListener
   - hash:
       serializedVersion: 2
-      Hash: bc8b2d9f43609628c2ee2a9321024d4b
+      Hash: 05e5b6cca905444876ec1ae5f0fa2d75
     assemblyName: Assembly-CSharp
     namespaceName: 
-    className: PlayButtonClick
+    className: SensorManager
+  - hash:
+      serializedVersion: 2
+      Hash: a7c801e18882c40a25b542f35652ed53
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: MainMenuController
+  - hash:
+      serializedVersion: 2
+      Hash: 06e665a55821ed98392d7c61eb402cb1
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: EndLevelController
+  - hash:
+      serializedVersion: 2
+      Hash: b6ac951732df32df5bd53c62a500a615
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: GameManager1
+  - hash:
+      serializedVersion: 2
+      Hash: 48e1cc58021c9e229ea1a9a5ea64cfbf
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: GameManager
+  - hash:
+      serializedVersion: 2
+      Hash: 67945f7090acc48e589f8f660922e0af
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: CarController
+  - hash:
+      serializedVersion: 2
+      Hash: fb714df4c8a712cb0b3d6b9f57ebcf1a
+    assemblyName: Assembly-CSharp
+    namespaceName: GleyTrafficSystem
+    className: TrafficComponentMultiplayer
   - hash:
       serializedVersion: 2
       Hash: 49fa8e4ec1ff15ba12f841ddac977b39
     assemblyName: Assembly-CSharp
     namespaceName: 
     className: QuitButtonClick
+  - hash:
+      serializedVersion: 2
+      Hash: 893072f4ec76762ace7783080576d846
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: GroundCheck
+  - hash:
+      serializedVersion: 2
+      Hash: a37a01f31000e52978e89c3e491f84ec
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: PlayerOpenDoor
+  - hash:
+      serializedVersion: 2
+      Hash: b8dfa9b27e67a41e12cb0cbc3a758efb
+    assemblyName: Assembly-CSharp
+    namespaceName: GleyTrafficSystem
+    className: EngineSoundComponent
+  - hash:
+      serializedVersion: 2
+      Hash: 70f5e71c60034a539b438edbee8270bc
+    assemblyName: Assembly-CSharp
+    namespaceName: GleyTrafficSystem
+    className: VehiclePool
+  - hash:
+      serializedVersion: 2
+      Hash: 66c05ca465c6c8eff1db32bc935b98f9
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: CarAI
+  - hash:
+      serializedVersion: 2
+      Hash: deb74dfbc133eec8b3485d96d57429e8
+    assemblyName: Assembly-CSharp
+    namespaceName: GleyTrafficSystem
+    className: VehicleComponent
+  - hash:
+      serializedVersion: 2
+      Hash: e13a4fd6d131eccddcdf3602281e3997
+    assemblyName: Assembly-CSharp
+    namespaceName: GleyTrafficSystem
+    className: UIButton
+  - hash:
+      serializedVersion: 2
+      Hash: 8cc5a829c55e9899aafe364fb63d5125
+    assemblyName: Assembly-CSharp
+    namespaceName: GleyTrafficSystem
+    className: VehicleLightsComponent
+  - hash:
+      serializedVersion: 2
+      Hash: bc1052c74afd0e25fba3a6738b9960b0
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: WanderScript
+  - hash:
+      serializedVersion: 2
+      Hash: 30e8f6ef1a9b4f901795d0eb701f07d7
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: AIScript
+  - hash:
+      serializedVersion: 2
+      Hash: f19356352a76c1d176d896ee19afad67
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: PlayerController
+  - hash:
+      serializedVersion: 2
+      Hash: b081ad67d42056d121f2a03fd7d7dd4a
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: IntroController
+  - hash:
+      serializedVersion: 2
+      Hash: bc8b2d9f43609628c2ee2a9321024d4b
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: PlayButtonClick
+  - hash:
+      serializedVersion: 2
+      Hash: 829f1fc5c144cb2d4d316f83920150b1
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: ArrowPointing
+  - hash:
+      serializedVersion: 2
+      Hash: 5384782efb14b125020fed70d681fb18
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: TrafficManager
+  - hash:
+      serializedVersion: 2
+      Hash: 437227e8e0fcad22646909fb60433d19
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: LevelEnd
+  - hash:
+      serializedVersion: 2
+      Hash: 393e2e3345f66d39d86621737d807469
+    assemblyName: Assembly-CSharp
+    namespaceName: GleyTrafficSystem
+    className: UIInput
+  - hash:
+      serializedVersion: 2
+      Hash: 3d7c58b60f81c0df87dc40d3a4794343
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: controllingCarAI
+  - hash:
+      serializedVersion: 2
+      Hash: 2a0a604a3cbb4414c9c0826af3c2b3f8
+    assemblyName: Assembly-CSharp
+    namespaceName: GleyUrbanAssets
+    className: CurrentSceneData
+  - hash:
+      serializedVersion: 2
+      Hash: 6be545ff71ac0c54eeb5ce9dc24b5fbb
+    assemblyName: Assembly-CSharp
+    namespaceName: GleyTrafficSystem
+    className: DebugSettings
+  - hash:
+      serializedVersion: 2
+      Hash: c7d6c607f77522139578346a3665cc5a
+    assemblyName: Assembly-CSharp
+    namespaceName: GleyTrafficSystem
+    className: IntersectionEvents
+  - hash:
+      serializedVersion: 2
+      Hash: 376eed96cf4be2353639a05c7db0a870
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: Door
+  - hash:
+      serializedVersion: 2
+      Hash: 2e3dbf19f8394f57b6c0d638fddda074
+    assemblyName: Assembly-CSharp
+    namespaceName: GleyTrafficSystem
+    className: LayerSetup
+  - hash:
+      serializedVersion: 2
+      Hash: 706c05b95a98f0819a1f5496b2525938
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: ScenePopulator
   platform: 19
   scenePathNames:
   - Assets/Levels/Menu.unity
@@ -2182,4 +2203,4 @@ ScriptsOnlyBuild:
   - Assets/Levels/LevelComplete1.unity
   - Assets/Levels/LevelComplete2.unity
   - Assets/Levels/LevelComplete3.unity
-  playerPath: C:/Users/Jz111/Downloads/build/VeryGaryLate.exe
+  playerPath: W:/VeryGaryLate.exe

@@ -11,6 +11,8 @@ public class GameManager1 : MonoBehaviour
     public Text scoreText;
     public Text timerText;
 
+    public GameObject Pause;
+    public bool isPause;
     // Track the current level
     public static int currentLevelIndex; // Making it static to access from other scripts
 
@@ -40,6 +42,8 @@ public class GameManager1 : MonoBehaviour
 
     void Start()
     {
+        isPause = false;
+        Pause.SetActive(false);
         // Play the music when the game starts
         audioSource.clip = music;
         audioSource.loop = true; // Set to true if you want the music to loop
@@ -69,6 +73,14 @@ public class GameManager1 : MonoBehaviour
             AddScore(Mathf.RoundToInt(timeLeft));
             timeLeft = 0;
         }
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            if(isPause){
+                ResumeGame();
+            }else{
+                PauseGame();
+            }
+        }
     }
 
     public void AddScore(int newScoreValue)
@@ -78,15 +90,45 @@ public class GameManager1 : MonoBehaviour
     }
 
     void UpdateScore()
+{
+    if (scoreText != null)
     {
-        if (scoreText != null)
-        {
-            scoreText.text = "Score: " + score;
-        }
+        scoreText.text = "Score: " + score;
     }
+    else
+    {
+        Debug.LogError("ScoreText is not assigned.");
+    }
+}
 
     private void OnDestroy()
     {
         SceneManager.sceneLoaded -= OnSceneLoaded; // Unsubscribe to avoid memory leaks
+    }
+
+    public void PauseGame(){
+    Pause.SetActive(true);
+    Time.timeScale = 0f;
+    isPause = true;
+    Cursor.visible = true;
+    Cursor.lockState = CursorLockMode.None; // Free the cursor
+}
+public void ResumeGame(){
+    Pause.SetActive(false);
+    Time.timeScale = 1.0f;
+    isPause = false;
+    Cursor.visible = false; // Optionally hide the cursor
+    Cursor.lockState = CursorLockMode.Locked; // Optionally lock the cursor back
+}
+
+    public void Menu(){
+        Time.timeScale = 1.0f;
+        isPause = false;
+        SceneManager.LoadScene("Menu");
+    }
+
+    public void QuitGame(){
+        isPause = false;
+        Application.Quit();
     }
 }
