@@ -85,6 +85,7 @@
     <Compile Include="Assets\Scripts\ArrowScript.cs" />
     <Compile Include="Assets\Imports\GleyPlugins\SharedUrbanAssets\Scripts\Runtime\EditorOnlyMonoBehaviours\RoadBase.cs" />
     <Compile Include="Assets\Imports\GleyPlugins\TrafficSystem\Example\UI\UIInput.cs" />
+    <Compile Include="Assets\Scripts\PlayButtonClick.cs" />
     <Compile Include="Assets\Imports\GleyPlugins\TrafficSystem\Scripts\Core\Traffic\Intersection\PriorityIntersection.cs" />
     <Compile Include="Assets\Imports\GleyPlugins\TrafficSystem\Scripts\Core\Traffic\Other\PositionValidator.cs" />
     <Compile Include="Assets\Imports\GleyPlugins\SharedUrbanAssets\Scripts\Runtime\EditorOnlyMonoBehaviours\WaypointSettingsBase.cs" />
@@ -95,7 +96,6 @@
     <Compile Include="Assets\Imports\GleyPlugins\TrafficSystem\Scripts\Core\EditorOnlyMonoBehaviours\Intersection\PriorityIntersectionSettings.cs" />
     <Compile Include="Assets\Scripts\WanderScript.cs" />
     <Compile Include="Assets\Imports\GleyPlugins\TrafficSystem\Scripts\Core\Traffic\Jobs\UpdateTriggerJob.cs" />
-    <Compile Include="Assets\CarAI\Scripts\PlayButtonClick.cs" />
     <Compile Include="Assets\Imports\GleyPlugins\SharedUrbanAssets\Scripts\Runtime\EditorOnlyMonoBehaviours\ConnectionCurve.cs" />
     <Compile Include="Assets\Imports\GleyPlugins\TrafficSystem\Scripts\Core\Traffic\Enums\BlinkReasons.cs" />
     <Compile Include="Assets\Imports\GleyPlugins\TrafficSystem\Scripts\Core\Traffic\Managers\TrafficManager.cs" />
@@ -108,7 +108,6 @@
     <Compile Include="Assets\Imports\GleyPlugins\TrafficSystem\Scripts\Core\Traffic\Intersection\GenericIntersection.cs" />
     <Compile Include="Assets\Imports\GleyPlugins\TrafficSystem\Scripts\Core\EditorOnlyMonoBehaviours\Intersection\IntersectionStopWaypointsSettings.cs" />
     <Compile Include="Assets\Imports\GleyPlugins\TrafficSystem\Example\UI\CameraFollow.cs" />
-    <Compile Include="Assets\CarAI\Scripts\QuitButtonClick.cs" />
     <Compile Include="Assets\Imports\GleyPlugins\TrafficSystem\Scripts\Core\EditorOnlyMonoBehaviours\Routes\WaypointExtensionMethods.cs" />
     <Compile Include="Assets\CarAI\Scripts\CarAI.cs" />
     <Compile Include="Assets\Scripts\GameManager.cs" />
@@ -139,6 +138,7 @@
     <Compile Include="Assets\Imports\GleyPlugins\TrafficSystem\Scripts\Core\Traffic\Enums\SpecialDriveActionTypes.cs" />
     <Compile Include="Assets\Imports\GleyPlugins\TrafficSystem\Scripts\Core\Traffic\Intersection\TrafficLightsIntersection.cs" />
     <Compile Include="Assets\Imports\GleyPlugins\SharedUrbanAssets\Scripts\Runtime\EditorOnlyMonoBehaviours\ConnectionPool.cs" />
+    <Compile Include="Assets\Scripts\QuitButtonClick.cs" />
     <Compile Include="Assets\Imports\GleyPlugins\SharedUrbanAssets\Scripts\Runtime\Interfaces\IIntersection.cs" />
     <Compile Include="Assets\Scripts\PlayerController.cs" />
     <Compile Include="Assets\EasyMainMenu\Scripts\Main Menu Scripts\MainMenuController.cs" />

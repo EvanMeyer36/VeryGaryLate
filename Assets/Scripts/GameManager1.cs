@@ -27,11 +27,11 @@ public class GameManager1 : MonoBehaviour
             Instance = this;
             DontDestroyOnLoad(gameObject);
         }
-        else
-        {
-            Destroy(gameObject);
-            return; // Exit if another GameManager1 instance already exists.
-        }
+        // else
+        // {
+        //     Destroy(gameObject);
+        //     return; // Exit if another GameManager1 instance already exists.
+        // }
 
         audioSource = gameObject.AddComponent<AudioSource>();
 
@@ -66,7 +66,10 @@ public class GameManager1 : MonoBehaviour
     void Update()
     {
         timeLeft -= Time.deltaTime;
-        timerText.text = "Time Left: " + Mathf.Max(0, Mathf.RoundToInt(timeLeft));
+
+        if (timerText != null)
+            timerText.text = "Time Left: " + Mathf.Max(0, Mathf.RoundToInt(timeLeft));
+
 
         if (timeLeft <= 0)
         {
@@ -106,7 +109,7 @@ public class GameManager1 : MonoBehaviour
         SceneManager.sceneLoaded -= OnSceneLoaded; // Unsubscribe to avoid memory leaks
     }
 
-    public void PauseGame(){
+public void PauseGame(){
     Pause.SetActive(true);
     Time.timeScale = 0f;
     isPause = true;
@@ -124,6 +127,8 @@ public void ResumeGame(){
     public void Menu(){
         Time.timeScale = 1.0f;
         isPause = false;
+        // Pause.SetActive(true);
+        // DontDestroyOnLoad(gameObject);  //
         SceneManager.LoadScene("Menu");
     }
 
