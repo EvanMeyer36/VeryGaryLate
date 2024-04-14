@@ -12,7 +12,7 @@ public class GameManager1 : MonoBehaviour
     public Text timerText;
 
     public GameObject Pause;
-    public bool isPause;
+    public bool isPause = false;
     // Track the current level
     public static int currentLevelIndex; // Making it static to access from other scripts
 
@@ -25,25 +25,31 @@ public class GameManager1 : MonoBehaviour
         if (Instance == null)
         {
             Instance = this;
-            DontDestroyOnLoad(gameObject);
+            // DontDestroyOnLoad(gameObject);
         }
+        
+        audioSource = gameObject.AddComponent<AudioSource>();
+
+        currentLevelIndex = SceneManager.GetActiveScene().buildIndex;
+
+        SceneManager.sceneLoaded += OnSceneLoaded; // Subscribe to the sceneLoaded event
+
+        // if (isPause != null){
+            isPause = false;
+            Pause.SetActive(false);
+        // }
+    }
+
+    void Start()
+    {
+
+
         // else
         // {
         //     Destroy(gameObject);
         //     return; // Exit if another GameManager1 instance already exists.
         // }
 
-        audioSource = gameObject.AddComponent<AudioSource>();
-
-        currentLevelIndex = SceneManager.GetActiveScene().buildIndex;
-
-        SceneManager.sceneLoaded += OnSceneLoaded; // Subscribe to the sceneLoaded event
-    }
-
-    void Start()
-    {
-        isPause = false;
-        Pause.SetActive(false);
         // Play the music when the game starts
         audioSource.clip = music;
         audioSource.loop = true; // Set to true if you want the music to loop
