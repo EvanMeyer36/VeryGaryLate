@@ -1,5 +1,5 @@
 sceneSetups:
-- path: Assets/Levels/LevelComplete3.unity
+- path: Assets/Levels/Level 3 City.unity
   isLoaded: 1
   isActive: 1
   isSubScene: 0
