@@ -34,14 +34,18 @@ public class GameManager1 : MonoBehaviour
 
         SceneManager.sceneLoaded += OnSceneLoaded; // Subscribe to the sceneLoaded event
 
+        isPause = false;
+        Pause.SetActive(false);
+
         // if (isPause != null){
-            isPause = false;
-            Pause.SetActive(false);
+
         // }
     }
 
     void Start()
     {
+
+
 
 
         // else
@@ -81,6 +85,7 @@ public class GameManager1 : MonoBehaviour
         {
             AddScore(Mathf.RoundToInt(timeLeft));
             timeLeft = 0;
+            SceneManager.LoadScene("Game over"); //
         }
         if (Input.GetKeyDown(KeyCode.Escape))
         {

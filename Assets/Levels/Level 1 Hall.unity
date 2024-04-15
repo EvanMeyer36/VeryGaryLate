@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.37311953, g: 0.38074014, b: 0.3587274, a: 1}
+  m_IndirectSpecularColor: {r: 0.37311918, g: 0.3807398, b: 0.35872716, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -72946,7 +72946,7 @@ PrefabInstance:
       objectReference: {fileID: 8300000, guid: c018c30ef2fad054fa1df935ee8faa05, type: 3}
     - target: {fileID: 1473053863338128190, guid: 609617b6c6abbdb4a9af595a44190d5c, type: 3}
       propertyPath: timeLeft
-      value: 60
+      value: 45
       objectReference: {fileID: 0}
     - target: {fileID: 1473053863338128190, guid: 609617b6c6abbdb4a9af595a44190d5c, type: 3}
       propertyPath: scoreText
@@ -86434,6 +86434,10 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1603951221}
+    - target: {fileID: 3185199989275154943, guid: 682912e4f30fa9c478dddc3332a1e400, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 40
+      objectReference: {fileID: 0}
     - target: {fileID: 3675552737390246248, guid: 682912e4f30fa9c478dddc3332a1e400, type: 3}
       propertyPath: m_Camera
       value: 
@@ -86522,14 +86526,46 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pause
       objectReference: {fileID: 0}
+    - target: {fileID: 6027226726271797677, guid: 682912e4f30fa9c478dddc3332a1e400, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1603951221}
+    - target: {fileID: 6027226726271797677, guid: 682912e4f30fa9c478dddc3332a1e400, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: ResumeGame
+      objectReference: {fileID: 0}
+    - target: {fileID: 6328999554590318188, guid: 682912e4f30fa9c478dddc3332a1e400, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1603951221}
+    - target: {fileID: 6328999554590318188, guid: 682912e4f30fa9c478dddc3332a1e400, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: Menu
+      objectReference: {fileID: 0}
     - target: {fileID: 7612212763530229826, guid: 682912e4f30fa9c478dddc3332a1e400, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1603951221}
+    - target: {fileID: 8483956391148905171, guid: 682912e4f30fa9c478dddc3332a1e400, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1603951221}
+    - target: {fileID: 8483956391148905171, guid: 682912e4f30fa9c478dddc3332a1e400, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: QuitGame
+      objectReference: {fileID: 0}
     - target: {fileID: 8847872170343160984, guid: 682912e4f30fa9c478dddc3332a1e400, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1603951221}
+    - target: {fileID: 8950885167222181370, guid: 682912e4f30fa9c478dddc3332a1e400, type: 3}
+      propertyPath: m_FontData.m_MinSize
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8950885167222181370, guid: 682912e4f30fa9c478dddc3332a1e400, type: 3}
+      propertyPath: m_FontData.m_FontSize
+      value: 40
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

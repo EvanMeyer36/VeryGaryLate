@@ -21,6 +21,8 @@ public class GameManager : MonoBehaviour
             // End the level or add time bonus to score here
             AddScore(Mathf.RoundToInt(timeLeft)); // Adds remaining time as bonus points
             timeLeft = 0; // Stop the countdown
+
+            
         }
     }
 

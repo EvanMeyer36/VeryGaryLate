@@ -16,7 +16,7 @@ public class CarController : MonoBehaviour
 
         if (waypoints.Length == 0)
         {
-            Debug.LogError("No waypoints set!");
+            // Debug.LogError("No waypoints set!");
         }
         else
         {
