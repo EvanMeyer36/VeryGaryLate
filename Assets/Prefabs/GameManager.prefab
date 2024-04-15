@@ -48,3 +48,6 @@ MonoBehaviour:
   timeLeft: 60
   scoreText: {fileID: 0}
   timerText: {fileID: 0}
+  Pause: {fileID: 5755570975973282921, guid: 682912e4f30fa9c478dddc3332a1e400, type: 3}
+  isPause: 0
+  music: {fileID: 0}

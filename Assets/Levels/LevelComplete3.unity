@@ -214,7 +214,7 @@ GameObject:
   - component: {fileID: 304245636}
   - component: {fileID: 304245635}
   - component: {fileID: 304245634}
-  - component: {fileID: 304245633}
+  - component: {fileID: 304245638}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -222,22 +222,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &304245633
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 304245632}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6138c7484892fbe479fbe724e51c1d89, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  scoreText: {fileID: 127529477}
-  timeText: {fileID: 1540173546}
-  totalScoreText: {fileID: 1521627221}
-  continueButton: {fileID: 1211270988}
 --- !u!114 &304245634
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -326,6 +310,23 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!114 &304245638
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 304245632}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 510acc8783503e74b84203e20937a573, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scoreText: {fileID: 127529477}
+  timeText: {fileID: 1540173546}
+  totalScoreText: {fileID: 1521627221}
+  continueButton: {fileID: 1211270988}
+  nextSceneName: Menu
 --- !u!1 &376989143
 GameObject:
   m_ObjectHideFlags: 0
@@ -637,7 +638,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Button
+  m_Text: Next
 --- !u!222 &1124753226
 CanvasRenderer:
   m_ObjectHideFlags: 0
