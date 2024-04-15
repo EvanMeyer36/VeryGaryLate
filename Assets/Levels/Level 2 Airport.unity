@@ -52385,8 +52385,7 @@ PrefabInstance:
       propertyPath: m_Name
       value: crowdAudio airport (1)
       objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: -6136495902442290976, guid: 1f63d5dd349c7d647a933e90fc2f5c4c, type: 3}
+    m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
