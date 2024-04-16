@@ -5,6 +5,9 @@ Welcome to Very Gary Late, the game where you rush through crowds of people to r
 ## Description
 Very Gary Late is an exciting and fast-paced game where you play as Gary, a character trying to make it through busy streets filled with obstacles and crowds. Your objective is to navigate through the chaos and reach your destination before time runs out.
 
+## Trailer
+[Watch Now](https://drive.google.com/file/d/1vUnumSQg_-MCz2gTSSQcN5Cwpwl5JWzG/view?usp=drive_link)
+
 ## Features
 - Fast-paced gameplay
 - Dynamic crowd simulation
@@ -22,10 +25,6 @@ You can download the demo of Very Gary Late to get a glimpse of the action:
 3. Run the executable file to start the game.
 4. Use the arrow keys (or WASD) to move Gary through the crowds.
 5. Reach your destination before time runs out to win!
-
-## Screenshots
-![Screenshot 1](screenshots/screenshot1.png)
-![Screenshot 2](screenshots/screenshot2.png)
 
 ## Contributing
 If you'd like to contribute to Very Gary Late, feel free to fork this repository and submit a pull request with your changes.
