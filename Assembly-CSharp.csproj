@@ -66,6 +66,7 @@
   <ItemGroup>
     <Compile Include="Assets\Scripts\GameManager1.cs" />
     <Compile Include="Assets\Imports\GleyPlugins\TrafficSystem\Scripts\Core\Traffic\Managers\WaypointManager.cs" />
+    <Compile Include="Assets\Scripts\ExplosiveRadius.cs" />
     <Compile Include="Assets\Imports\GleyPlugins\TrafficSystem\Scripts\Core\Traffic\Waypoint\Waypoint.cs" />
     <Compile Include="Assets\Imports\GleyPlugins\SharedUrbanAssets\Scripts\Runtime\EditorOnlyMonoBehaviours\Path.cs" />
     <Compile Include="Assets\Imports\GleyPlugins\TrafficSystem\Scripts\Core\Traffic\DelegateImplementation\AvailableDelegates.cs" />

@@ -16,7 +16,7 @@ public class PlayerController : MonoBehaviour
     // Reference to the GameManager script
     public GameManager1 gameManager;
 
-    private int bounceForce = 2000;
+    private int bounceForce = 1000;
 
     private void OnCollisionEnter(Collision collision)
 {

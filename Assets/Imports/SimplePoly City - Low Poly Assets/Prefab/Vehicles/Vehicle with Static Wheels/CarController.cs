@@ -44,7 +44,7 @@ public class CarController : MonoBehaviour
     // Ensure that we reset travelling state and move to the next waypoint
     isTravelling = true;
 
-    Debug.Log("Moving to waypoint: " + currentWaypointIndex); // Log the current waypoint index
+    // Debug.Log("Moving to waypoint: " + currentWaypointIndex); // Log the current waypoint index
 
     // Set the car to move to the current waypoint
     carAgent.SetDestination(waypoints[currentWaypointIndex].position);

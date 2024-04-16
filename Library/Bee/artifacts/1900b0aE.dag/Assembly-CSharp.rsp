@@ -448,6 +448,7 @@
 "Assets/Scripts/AIScript.cs"
 "Assets/Scripts/ArrowScript.cs"
 "Assets/Scripts/CrowdScript.cs"
+"Assets/Scripts/ExplosiveRadius.cs"
 "Assets/Scripts/GameManager.cs"
 "Assets/Scripts/GameManager1.cs"
 "Assets/Scripts/GroundCheck.cs"

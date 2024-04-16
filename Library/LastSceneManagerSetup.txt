@@ -1,5 +1,5 @@
 sceneSetups:
-- path: Assets/Levels/Level 2 Airport.unity
+- path: Assets/Levels/Victory.unity
   isLoaded: 1
   isActive: 1
   isSubScene: 0
