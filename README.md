@@ -13,7 +13,7 @@ Very Gary Late is an exciting and fast-paced game where you play as Gary, a char
 
 ## Demo
 You can download the demo of Very Gary Late to get a glimpse of the action:
-- [Windows Demo](#) (coming soon)
+- [Windows Demo](https://github.com/emeyer5/VeryGaryLate/tree/main/build/WindowsBuild) (coming soon)
 - [Mac Demo](#) (coming soon)
 - [Linux Demo](#) (coming soon)
 
