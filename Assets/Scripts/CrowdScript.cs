@@ -1,5 +1,6 @@
 using UnityEngine;
 using System.Collections;
+using System;
 
 public class CrowdMember : MonoBehaviour
 {
@@ -15,6 +16,12 @@ public class CrowdMember : MonoBehaviour
     private float nextWanderTime = 0f;
     public float wanderInterval = 5f; // Time between wanders
     public float maxForce = 10f; // The amount of force applied when hit by the player
+
+    public Boolean bouncy;
+
+    public Boolean explody;
+
+    public AudioClip soundEffect;
     private AudioClip[] hitSounds; // Array of sounds that play when the NPC is hit
 
     void Start()
@@ -44,14 +51,14 @@ public class CrowdMember : MonoBehaviour
     {
         if (hitSounds != null && hitSounds.Length > 0)
         {
-            int index = Random.Range(0, hitSounds.Length);
+            int index = UnityEngine.Random.Range(0, hitSounds.Length);
             audioSource.PlayOneShot(hitSounds[index]);
         }
     }
 
     void Wander()
     {
-        Vector3 randomDirection = Random.insideUnitSphere * wanderRadius;
+        Vector3 randomDirection = UnityEngine.Random.insideUnitSphere * wanderRadius;
         randomDirection += transform.position;
 
         UnityEngine.AI.NavMeshHit hit;
@@ -82,7 +89,8 @@ public class CrowdMember : MonoBehaviour
             rb.AddForce(-forceDirection * maxForce, ForceMode.Impulse);
             isWandering = false;
         }
-
+        if (soundEffect != null)
+            audioSource.PlayOneShot(soundEffect);
         PlayRandomHitSound();
         
         // Use the singleton instance to add score

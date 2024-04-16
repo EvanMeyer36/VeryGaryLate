@@ -16,6 +16,8 @@ public class PlayerController : MonoBehaviour
     // Reference to the GameManager script
     public GameManager1 gameManager;
 
+    private int bounceForce = 2000;
+
     private void OnCollisionEnter(Collision collision)
 {
     if (collision.gameObject.CompareTag("crowd")) // Assuming 'crowd' is the tag of your NPCs
@@ -28,6 +30,10 @@ public class PlayerController : MonoBehaviour
             forceDirection.y = 0; // Ensure the force is applied horizontally
             forceDirection.Normalize();
             npcRigidbody.AddForce(forceDirection * maxForce, ForceMode.Impulse);
+            if (collision.gameObject.GetComponent<CrowdMember>().bouncy)
+                rb.AddExplosionForce(bounceForce, collision.contacts[0].point,1);
+                // Debug.Log("Bouncy");
+        
         }
     }
 }
@@ -87,6 +93,7 @@ public class PlayerController : MonoBehaviour
     void Start()
     {
         Cursor.lockState = CursorLockMode.Locked;
+
     }
 
     void LateUpdate()
