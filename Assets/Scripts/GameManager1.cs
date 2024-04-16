@@ -44,6 +44,8 @@ public class GameManager1 : MonoBehaviour
 
     void Start()
     {
+        Cursor.visible = false;
+        Cursor.lockState = CursorLockMode.Locked;
 
 
 

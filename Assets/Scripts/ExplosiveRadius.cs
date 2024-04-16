@@ -14,20 +14,17 @@ public class ExplosiveRadius : MonoBehaviour
     public GameObject parent;
 
     void Start(){
-        if (audioSource == null){
+        // if (audioSource == null){
         audioSource = GetComponent<AudioSource>();
-        }
+        // }
     }
 
     public void OnTriggerEnter(Collider col){
         // Debug.Log("Hi"); //
         if (col.gameObject.CompareTag("Player")){
 
+            GameObject.Find("Boom").GetComponent<AudioSource>().Play();
             col.gameObject.GetComponent<Rigidbody>().AddExplosionForce(force, transform.position, 0,0);
-                
-            
-    
-                audioSource.Play();
             
             Destroy(parent);
             }

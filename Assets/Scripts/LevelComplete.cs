@@ -1,6 +1,7 @@
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
+using UnityEditor;
 
 public class EndLevelController : MonoBehaviour
 {
@@ -11,6 +12,8 @@ public class EndLevelController : MonoBehaviour
     public string nextSceneName = "MainMenu"; // Name of the scene to load after the video
     void Start()
     {
+        Cursor.lockState = CursorLockMode.None;
+        Cursor.visible = true;
         // Retrieve score data, assuming they are saved in PlayerPrefs
         int score = PlayerPrefs.GetInt("Score", 0);
         int remainingTime = PlayerPrefs.GetInt("RemainingTime", 0);
